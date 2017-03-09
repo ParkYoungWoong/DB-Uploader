@@ -1,0 +1,35 @@
+{
+  "name": "Herop",
+  "version": "1.0.0",
+  "description": "HTML5 Boilerplate for Herop",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-asciidoctor": "^1.5.5-4.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "formidable": "^1.1.1",
+    "glob": "^7.1.1",
+    "mongoose": "^4.8.2",
+    "morgan": "^1.8.1"
+  },
+  "engines": {
+    "node": "4.3.1",
+    "npm": "2.14.12"
+  }
+}

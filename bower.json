@@ -1,0 +1,20 @@
+{
+  "name": "Herop",
+  "description": "HTML5 Boilerplate for Herop",
+  "main": "gulpfile.js",
+  "authors": [
+    "Herop <thesecon@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ParkYoungWoong/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.4"
+  }
+}
