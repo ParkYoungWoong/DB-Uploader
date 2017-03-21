@@ -19,17 +19,18 @@
     "gulp-uglify": "^2.0.0"
   },
   "dependencies": {
+    "asciidoctor.js": "^1.5.5-4",
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
-    "formidable": "^1.1.1",
     "glob": "^7.1.1",
     "mongoose": "^4.8.2",
+    "mongoose-auto-increment": "^5.0.1",
     "morgan": "^1.8.1"
   },
   "engines": {
-    "node": "4.3.1",
-    "npm": "2.14.12"
+    "node": "7.7.2",
+    "npm": "4.1.2"
   }
 }

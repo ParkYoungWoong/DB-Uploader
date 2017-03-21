@@ -25,6 +25,7 @@ var src = './app/sources',
       ],
       js: [
         src + '/js/lib/jquery-1.10.1.min.js',
+        src + '/js/lib/mousetrap.min.js',
         src + '/js/lib/bootstrap.min.js',
         src + '/js/main.js'
       ]

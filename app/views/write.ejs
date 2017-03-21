@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+
+    <title><%= title %></title>
+
+    <% include partials/head.ejs %>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/main.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <h1>포스트 작성</h1>
+
+    <form id="write_form" method="post" action="/submit">
+        <div class="form-group">
+            <label for="write_title" class="control-label">포스트 제목</label>
+            <input type="text" id="write_title" class="form-control" name="title" placeholder="제목을 입력하세요.">
+        </div>
+        <div class="form-group">
+            <label for="write_contents" class="control-label">포스트 내용</label>
+            <textarea id="write_contents" class="form-control" rows="10" name="contents" placeholder="내용을 입력하세요."></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" class="agree_submit">
+            <button type="submit" class="btn btn-primary" disabled>작성완료</button>
+        </div>
+    </form>
+
+</div>
+<% include partials/google_analytic.ejs %>
+</body>
+</html>

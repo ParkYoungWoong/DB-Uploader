@@ -1,31 +1,28 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
-var formidable = require('formidable');
-
+var asciidoctor = require('asciidoctor.js')();
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema({
-  contents: String
-}, {
-  collection: 'post'
-});
-var Post = mongoose.model('POST', Schema);
+require('../models/write.model');
+var Blog = mongoose.model('Blog');
 
 module.exports = function (app) {
-    app.use('/submit', router);
+  app.use('/submit', router);
 };
 
 router.post('/', function (req, res, next) {
-  var value = req.body.contents;
-  var save = new Post();
+  var blog = new Blog();
+  var html = asciidoctor.convert(req.body.contents);
 
-  save.contents = value;
-  save.save(function (err) {
+  blog.title = req.body.title;
+  blog.contents = html;
+
+  blog.save(function (err) {
+
     if (err) {
       console.error(err);
       return;
     }
 
-    res.send(value);
+    res.send(html);
   });
 });
