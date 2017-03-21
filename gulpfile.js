@@ -27,6 +27,7 @@ var src = './app/sources',
         src + '/js/lib/jquery-1.10.1.min.js',
         src + '/js/lib/mousetrap.min.js',
         src + '/js/lib/bootstrap.min.js',
+        src + '/js/write.form.js',
         src + '/js/main.js'
       ]
     },

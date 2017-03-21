@@ -23,6 +23,8 @@ router.post('/', function (req, res, next) {
       return;
     }
 
-    res.send(html);
+    res.render('success', {
+      title: '전송 성공'
+    });
   });
 });
